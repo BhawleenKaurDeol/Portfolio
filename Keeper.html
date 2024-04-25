@@ -4,26 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Tindog</title>
+    <title>Keeper</title>
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="manifest" href="site.webmanifest">
-<script src="main.js"></script>
+<script src="main.js" defer></script>
 </head>
 <body class="bg-rose-50">
-    
+  <!-- Navbar -->
   <div class="navbar bg-rose-300 p-4">
-    <div class="flex-1 ">
+    <div class="flex-1">
           <a class="btn btn-ghost text-2xl text-pink-800 hover:bg-rose-200">Bhawleen Kaur Deol</a>
     </div>
-    <div class="hidden md:flex flex-none">
+    <div class="hidden md:flex flex-none" >
       <ul class="menu menu-horizontal px-1 text-lg text-pink-800 font-semibold ">
         <li><a class="hover:bg-rose-200" href="index.html">Home</a></li>
       </ul>
     </div>
-    <div class="flex-none md:hidden">
-      <button class="btn btn-square btn-ghost">
+
+    <div class=" sidenav" id="mySidenav">
+      <a href="javascript:void(0)" class="closebtn text-pink-800">&times;</a>
+      <ul class="menu menu-vertical content-center px-1 text-lg text-pink-800 font-semibold ">
+        <li><a class="hover:bg-rose-200" href="index.html">Home</a></li>
+      </ul>
+    </div>
+
+    <div class="flex flex-none md:hidden">
+      <button class="btn btn-square btn-ghost hover:bg-rose-200">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
       </button>
     </div>
@@ -32,8 +40,11 @@
   <!-- content -->
       <div class="text-center p-28">
         <h1 class="text-3xl text-pink-800 font-semibold">Under development. Coming Soon....</h1>
-      </div> 
-      
+        <p>Meanwhile, have a look at the code repository</p>
+        <a href="https://github.com/BhawleenKaurDeol/Keeper" target="_blank">Code repository</a>
+      </div>
+
+      <!-- footer and cta  -->
       <footer class="bg-rose-300" id="contact">
         <div class="mx-auto max-w-5xl px-4 py-10 sm:px-4 lg:px-4 ">
       
