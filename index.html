@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src='https://kit.fontawesome.com/1c9cf42f5e.js' crossorigin='anonymous'></script>
+    <script src="main.js" defer></script>
+    <title>Bhawleen Kaur Deol</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+</head>
+<body class="bg-pink-50">
+    <!-- Navbar -->
+    <div class="navbar bg-rose-300 p-4">
+        <div class="flex-1">
+              <a class="btn btn-ghost text-2xl text-pink-800 hover:bg-rose-200">Bhawleen Kaur Deol</a>
+        </div>
+        <div class="hidden lg:flex flex-none" >
+          <ul class="menu menu-horizontal px-1 text-lg text-pink-800 font-semibold ">
+            <li><a class="hover:bg-rose-200" href="#about">About Me</a></li>
+            <li><a class="hover:bg-rose-200" href="#education">Education</a></li>
+            <li><a class="hover:bg-rose-200" href="#projects">Projects</a></li>
+            <li><a class="hover:bg-rose-200" href="#contact">Contact Me</a></li>
+          </ul>
+        </div>
+
+        <div class=" sidenav" id="mySidenav">
+          <a href="javascript:void(0)" class="closebtn text-pink-800">&times;</a>
+          <ul class="menu menu-vertical content-center px-1 text-lg text-pink-800 font-semibold ">
+            <li><a class="hover:bg-rose-200" href="#about">About Me</a></li>
+            <li><a class="hover:bg-rose-200" href="#education">Education</a></li>
+            <li><a class="hover:bg-rose-200" href="#projects">Projects</a></li>
+            <li><a class="hover:bg-rose-200" href="#contact">Contact Me</a></li>
+          </ul>
+        </div>
+
+        <div class="flex flex-none md:hidden">
+          <button class="btn btn-square btn-ghost hover:bg-rose-200">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero min-h-screen">
+        <div class="hero-content flex-col lg:flex-row m-10 lg:max-w-full">
+          <img src="images/MyImage.jpeg" class="max-w-md rounded-lg shadow-2xl" />
+          <div>
+            <h1 class="text-3xl font-semibold text-pink-800">Hello and welcome! I'm Bhawleen</h1>
+            <p class="py-6">A passionate web developer dedicated to crafting exceptional digital experiences. With a keen eye for design and a love for clean, efficient code, I specialize in building responsive and user-friendly websites that leave a lasting impression.</p>
+            <button class="btn  bg-pink-800 hover:bg-rose-300  hover:text-black text-white"><a href="#projects">See Projects</a></button>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="education" class="bg-rose-300 py-10">
+        <h2 class="p-10 text-3xl uppercase text-pink-800 font-semibold">Education</h2>
+        <div  class="lg:grid  grid-cols-2">
+          <a href="#" class="relative m-10 block overflow-hidden rounded-lg border border-gray-100 p-4 sm:p-6 lg:p-8 bg-white">
+          <div class="sm:flex sm:justify-between sm:gap-4">
+            <div>
+        <h3 class="text-lg font-bold text-gray-900 sm:text-xl">
+          Post-Degree Diploma in Web and Mobile App Development
+        </h3>
+        <p class="mt-1 text-sm font-medium text-gray-600">Langara College, Vancouver, British Columbia</p>
+        <p class="mt-1 text-xs font-medium text-gray-600">Currently pursuing</p>
+            </div>
+        
+          </div>
+        
+          <div class="mt-4">
+            <ul class="text-pretty text-sm text-gray-500 list-disc p-4">
+              <li>Currently enrolled in the third semester.</li>
+              <li>learned how to combine graphic design principles with technical proficiency in HTML, CSS and JavaScrript to create visually appealing, functional and user-friendly web experiences in the first semester.</li>
+              <li>Made a Map navigation app for our second semester project. We used php, MySQL, Javascript, HTML and CSS to create the whole app.</li>
+            </ul>
+          </div>
+      
+        </a>
+        <!-- Second education item -->
+        <a
+          href="#"
+          class="relative block m-10 overflow-hidden rounded-lg border border-gray-100 bg-white p-4 sm:p-6 lg:p-8"
+        >
+          <!-- <span
+            class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"
+          ></span> -->
+        
+          <div class="sm:flex sm:justify-between sm:gap-4">
+            <div>
+        <h3 class="text-lg font-bold text-gray-900 sm:text-xl">
+           Bachelor’s in Computer Applications
+        </h3>
+        <p class="mt-1 text-sm font-medium text-gray-600">Banasthali Vidyapith, Jaipur, Rajasthan</p>
+        <p class="mt-1 text-xs font-medium text-gray-600">May 2022</p>
+            </div>
+        
+            <div class="hidden sm:block sm:shrink-0">
+            </div>
+          </div>
+        
+          <div class="mt-4">
+            <ul class="text-pretty text-sm text-gray-500 list-disc p-4">
+              <li>Acquired comprehensive knowledge of programming languages such as Java, Python and C++ along with hands-on experience in software development methodologies. </li>
+              <li>Developed proficiency in Database Management Systems(DBMS) and gained practical skills in designing, implementing and optimizing databases using SQL.</li>
+              <li>Explored the fundamentals of Web Development encompassing HTML, CSS, JavaScript, and gained practical experience in building dynamic and responsive websites. Additionally acquired knowledge of Web Development frameworks and tools to create interactive user interfaces and enhance user experience.</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+
+
+      </div>
+
+
+      <div id="projects" >
+        <h2 class="p-10 text-3xl uppercase text-pink-800 font-semibold">Projects</h2>
+      <div class="lg:grid grid-cols-3 ">
+
+  <!-- Tindog -->
+  <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg card m-10 bg-white">
+    <img
+      alt=""
+      src="images/Tindog_thumbnail.png"
+      class="h-56 w-full object-cover"/>
+  
+    <div class="bg-white p-4 sm:p-6">
+      <!-- <time datetime="2022-10-10" class="block text-xs text-gray-500"> 10th Oct 2022 </time> -->
+  
+      <a href="Tindog.html">
+        <h3 class="mt-0.5 text-lg text-gray-900 uppercase">Tindog</h3>
+      </a>
+  
+      <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+        A project completed during a web development bootcamp.A beautiful landing page was created for an imaginary startup called Tindog. It was developed using Bootstrap. Additional HTML and CSS were also used to get the desired output.
+      </p>
+    </div>
+  </article>
+
+<!-- Jobvio -->
+  <!-- <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg card m-10 bg-white">
+    <img
+      alt=""
+      src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+      class="h-56 w-full object-cover"
+    />
+  
+    <div class="bg-white p-4 sm:p-6">
+       
+  
+      <a href="#">
+        <h3 class="mt-0.5 text-lg text-gray-900 uppercase">Jobvio</h3>
+      </a>
+  
+      <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+        A major project done during Bachelor’s. We learned skills like Web developemnt and teamwork.
+        HTML,CSS, and Bootstrap are used for front end and MySQL is used for backend.
+      </p>
+    </div>
+  </article> -->
+
+  <!-- Keeper App -->
+  <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg card m-10 bg-white">
+    <img
+      alt=""
+      src="images/Keeper_add.PNG"
+      class="h-56 w-full "
+    />
+  
+    <div class="bg-white p-4 sm:p-6">
+      <!-- <time datetime="2022-10-10" class="block text-xs text-gray-500"> 10th Oct 2022 </time> -->
+  
+      <a href="Keeper.html">
+        <h3 class="mt-0.5 text-lg text-gray-900 uppercase">Keeper app</h3>
+      </a>
+  
+      <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+        This is an app based on MERN stack. I created this web app during a bootcamp.
+      </p>
+    </div>
+  </article>
+
+  <!-- Todolist app -->
+  <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg card m-10 bg-white">
+    <img
+      alt=""
+      src="images/ToDoList_default.PNG"
+      class="h-56 w-full "
+    />
+  
+    <div class="bg-white p-4 sm:p-6">
+  
+      <a href="Todolist.html">
+        <h3 class="mt-0.5 text-lg text-gray-900 uppercase">A To-Do-list app</h3>
+      </a>
+  
+      <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+        This is a todolist app created using  Express.js and Node.js. Also used EJS templates to create customized web pages dynamically.     
+      </p>
+    </div>
+  </article>
+
+      </div>
+    </div>
+
+    <!-- Footer and CTA -->
+    <footer class="bg-rose-300" id="contact">
+      <div class="mx-auto max-w-5xl px-4 py-10 sm:px-4 lg:px-4 ">
+    
+        <p class="mx-auto mt-6 max-w-md text-center leading-relaxed text-rose-800 text-2xl font-semibold">
+          Let's build something incredible together. Reach out to get started!
+        </p>
+    
+        <ul class="mt-12 flex justify-center gap-6 md:gap-8">
+          <li><a href="https://www.linkedin.com/in/bhawleen-kaur-deol/" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com/BhawleenKaurDeol" target="_blank">Github</a></li>
+          <li><a href="mailto:bhawleendeol@gmail.com">Email</a></li>
+        </ul>
+
+        <div class="text-center mt-10">
+          <p>
+            Copyright &#169 Bhawleen Kaur Deol
+          </p>
+        </div>
+      </div>
+
+      <div>
+        
+      </div>
+    </footer>
+</body>
+</html>
