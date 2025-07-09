@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Bhawleen Kaur Deol, Full Stack Developer specializing in React, Node.js, Firebase, and modern web apps.">
+    <meta property="og:title" content="Bhawleen Kaur Deol - Portfolio">
+    <meta property="og:image" content="images/bhawleen.png">
+
+    <title>Bhawleen Kaur Deol</title>
+    <!-- Fontawsome link -->
+    <script
+      src="https://kit.fontawesome.com/1c9cf42f5e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Tailwindcss CDN link -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <link href="./output.css" rel="stylesheet" />
+
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/Bhawleen_Deol.png" />
+
+    <!-- AOS animations -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <style>
+      * {
+  box-sizing: border-box;
+}
+      html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        overflow-x: hidden;
+      }
+    </style>
+  </head>
+  <body class="bg-abwhite">
+    <!-- Navbar  -->
+    <!-- div#navbar>nav>ul.navbar>li{Bhawleen Kaur Deol}li{About}li{Projects}li{Contact} -->
+
+    <nav class="top-0 z-50 bg-carnation text-white shadow-md py-4 px-8">
+      <ul class="flex flex-wrap justify-between items-center gap-4 w-full">
+        <li class="font-bold md:text-2xl">Bhawleen Kaur Deol</li>
+        <li class="hover:underline hover:text-abwhite collapse md:visible">
+          <a href="#about-me">About</a>
+        </li>
+        <li class="hover:underline hover:text-abwhite collapse md:visible">
+          <a href="#projects">Projects</a>
+        </li>
+        <li class="hover:underline hover:text-abwhite collapse md:visible">
+          <a href="#contact">Contact</a>
+        </li>
+        <li class="text-center cursor-pointer md:hidden">
+          <i id="menuToggle"  class="fa-solid fa-bars"></i>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Slide-in Menu -->
+<div id="mobileMenu" class="fixed inset-0 bg-carnation text-white p-8 hidden grid gap-6 z-50 transition-transform duration-500 ease-in-out translate-x-full  md:hidden">
+  <!-- Close button -->
+  <button id="closeMenu" class="text-3xl font-bold self-end hover:text-abwhite">&times;</button>
+
+  <!-- Menu links -->
+  <a href="#about-me" class="text-lg hover:underline flex-1">About</a>
+  <a href="#projects" class="text-lg hover:underline flex-1">Projects</a>
+  <a href="#contact" class="text-lg hover:underline flex-1">Contact</a>
+</div>
+
+    <!-- Hero section  -->
+
+    <section id="hero" class=" bg-abwhite py-20 px-8 mt-4 text-center min-h-screen flex items-center">
+      <div class="max-w-4xl mx-auto grid md:grid-cols-2 items-center gap-8">
+        <img
+          src="images/bhawleen.png"
+          alt="Bhawleen photo"
+          class="w-60 h-auto mx-auto rounded-3xl shadow-lg"
+        />
+        <div>
+          <h1 class="text-5xl font-bold text-carnation mb-4">
+            Hi, I'm Bhawleen
+          </h1>
+          <p class="text-lg text-gray-700">
+            Full Stack Developer passionate about building responsive,
+            accessible, and impactful digital solutions.
+          </p>
+
+
+          <div class="max-w-md mx-auto flex flex-col md:flex-row gap-4 px-6 py-6">
+            
+            <a
+              href="https://www.linkedin.com/in/bhawleen-kaur-deol/"
+              target="_blank"
+              class="text-white bg-carnation px-4 py-2 rounded hover:bg-red-400 flex-1"
+              >LinkedIn</a
+            >
+
+            <a
+              href="assets/Bhawleen Resume-Full Stack Developer.pdf"
+              target="_blank"
+              class="text-white bg-carnation px-4 py-2 rounded hover:bg-red-400 flex-1"
+              >Resume</a
+            >
+          
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section  -->
+    <!-- section#about-me>h1{About Me}div.education>h2{Education}div.Masters>ul>li>h3{Post - Graduate Diploma in Web and Mobile App Development}^li>i{December 2024}^li>b>i{Langara College, Vancouver, British Columbia}^^li{Lorem....}     -->
+    <section
+      id="about-me"
+      class="py-8 px-8 bg-abwhite"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+    >
+      <h2 class="text-4xl font-bold text-center mb-10 text-carnation">
+        About Me
+      </h2>
+      <h2 class="text-3xl font-bold my-8">Education</h2>
+      <div class="grid md:grid-cols-2 gap-5">
+        <div
+          class="Masters px-6 py-6 bg-spanishpink rounded-3xl hover:shadow-xl hover:scale-[1.02] transition-all duration-300"
+          data-aos="fade-right"
+          data-aos-duration="3000"
+        >
+          <h3 class="text-2xl font-semibold">
+            PGDM in Web and Mobile App Development
+          </h3>
+          <p class="italic">December 2024</p>
+          <p class="italic font-semibold">
+            Langara College, Vancouver, British Columbia
+          </p>
+          <ul class="list-disc list-inside mt-4 text-base">
+            <li>
+              Learned to combine graphic design principles with technical
+              proficiency in HTML, CSS, and JavaScript.
+            </li>
+            <li>
+              Gained practical experience in building dynamic and responsive
+              websites.
+            </li>
+            <li>
+              Explored Web Development frameworks and tools to create
+              interactive user interfaces.
+            </li>
+          </ul>
+        </div>
+        <div
+          class="Bachelor's px-6 py-6 bg-spanishpink rounded-3xl hover:shadow-xl hover:scale-[1.02] transition-all duration-300"
+          data-aos="fade-left"
+          data-aos-duration="3000"
+        >
+          <h3 class="text-2xl font-semibold">
+            Bachelor's in Computer Applications
+          </h3>
+          <p class="italic">May 2022</p>
+          <p class="italic font-semibold">
+            Banasthali Vidyapith, Jaipur, Rajasthan
+          </p>
+          <ul class="list-disc list-inside mt-4 text-base">
+            <li>Acquired proficiency in Java, Python, and C++.</li>
+            <li>
+              Developed strong skills in Database Management Systems (DBMS) and
+              SQL.
+            </li>
+            <li>
+              Learned software development methodologies and optimization
+              techniques.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h2 class="text-3xl font-bold my-8">Work Experience</h2>
+      <div class="grid md:grid-cols-2 gap-5">
+        <!-- Tech Role -->
+        <div
+          class="bg-spanishpink p-6 rounded-3xl shadow-lg px-6 py-6 hover:shadow-xl hover:scale-[1.02] transition-all duration-300"
+          data-aos="fade-up-right"
+          data-aos-duration="3000"
+        >
+          <h3 class="text-2xl font-semibold">
+            Full Stack Web Developer Intern
+          </h3>
+          <p class="italic">Unified Mentor • Apr 2025 - present</p>
+          <ul class="list-disc list-inside mt-4 text-base">
+            <li>
+              Contributing to real-world web development projects, working
+              across the full stack to build responsive and dynamic web
+              applications.
+            </li>
+            <li>
+              Designing and developing user-friendly web interfaces with a focus
+              on functionality and visual aesthetics.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Gap Inc. -->
+        <div
+          class="bg-spanishpink p-6 rounded-3xl shadow-lg px-6 py-6 hover:shadow-xl hover:scale-[1.02] transition-all duration-300"
+          data-aos="fade-up-left"
+          data-aos-duration="3000"
+        >
+          <h3 class="text-2xl font-semibold">Brand Associate</h3>
+          <p class="italic">Gap Inc., Vancouver • June 2024 – Present</p>
+          <ul class="list-disc list-inside mt-4 text-base">
+            <li>
+              Led merchandising resets and shipment processing to support
+              high-volume retail operations.
+            </li>
+            <li>
+              Communicated cross-functionally to ensure brand presentation and
+              customer satisfaction.
+            </li>
+            <li>
+              Gained experience in task prioritization, team leadership, and
+              retail analytics tools.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+
+    <section
+      id="projects"
+      class="py-12 px-8 bg-abwhite"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+    >
+      <h2 class="text-4xl font-bold text-center mb-10 text-carnation">
+        Projects
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Project Card 1 -->
+        <div
+          class="bg-spanishpink p-6 rounded-3xl shadow-lg hover:scale-[1.02] transition-transform"
+        >
+          <!-- Thumbnail -->
+          <img
+            src="images/Op_Login_Page.png"
+            alt="Surgery Screenshot"
+            class="w-full mb-4 sm:h-52 md:h-56 object-cover rounded-md hover:opacity-80"
+          />
+
+          <h3 class="text-2xl font-semibold mb-2">Surgery Scheduler</h3>
+          <p class="text-gray-800 mb-3">
+            A web app to schedule surgeries by assigning doctors, nurses, and
+            operating rooms using Firestore and React.
+          </p>
+          <div class="flex flex-wrap gap-2 text-sm mb-4">
+            <span class="bg-abwhite px-3 py-1 rounded-full">React.js</span>
+            <span class="bg-abwhite px-3 py-1 rounded-full">Firestore</span>
+            <span class="bg-abwhite px-3 py-1 rounded-full">TailwindCSS</span>
+          </div>
+          <div class="flex gap-4">
+            <a
+              href="https://github.com/BhawleenKaurDeol/Operation-Scheduler"
+              target="_blank"
+              class="text-white bg-carnation px-4 py-2 rounded hover:bg-red-400"
+              >GitHub</a
+            >
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div
+          class="bg-spanishpink p-6 rounded-3xl shadow-lg hover:scale-[1.02] transition-transform"
+        >
+        <!-- Thumbnail -->
+          <img
+            src="images/Cruise-ship-mgmt-pic.png"
+            alt="Cruise-ship-mgmt-pic Screenshot"
+            class="w-full mb-4 sm:h-52 md:h-56 object-cover rounded-md hover:opacity-80"
+          />
+          <h3 class="text-2xl font-semibold mb-2">Cruise Ship Management</h3>
+          <p class="text-gray-800 mb-3">
+            A modular management system for onboard cruise services like
+            catering, booking, and staff duties. Built with vanilla JavaScript
+            and Firebase.
+          </p>
+          <div class="flex flex-wrap gap-2 text-sm mb-4">
+            <span class="bg-abwhite px-3 py-1 rounded-full">JavaScript</span>
+            <span class="bg-abwhite px-3 py-1 rounded-full">Firebase</span>
+            <span class="bg-abwhite px-3 py-1 rounded-full">HTML/CSS</span>
+          </div>
+          <div class="flex gap-4">
+            <a
+              href="https://github.com/BhawleenKaurDeol/cruise-ship-management"
+              target="_blank"
+              class="text-white bg-carnation px-4 py-2 rounded hover:bg-red-400"
+              >GitHub</a
+            >
+          </div>
+        </div>
+
+
+<!-- Project Card 3 -->
+        <div
+          class="bg-spanishpink p-6 rounded-3xl shadow-lg hover:scale-[1.02] transition-transform"
+        >
+        <img src="images/Truvoye-pic.png" alt="Truvoye-image" class="w-full mb-4 sm:h-52 md:h-56object-cover rounded-md hover:opacity-80">
+          <h3 class="text-2xl font-semibold mb-2">Truvoye</h3>
+          <p class="text-gray-800 mb-3">
+            The Truvoye web application is a
+logistics management platform
+that helps the logistic companies
+that want to simplify the delivery
+initiation process by minimizing
+waiting times for delivery initiation,
+allowing them to supervise
+operations quickly, onboard drivers
+and track orders in real time.
+          </p>
+          <div class="flex flex-wrap gap-2 text-sm mb-4">
+            <span class="bg-abwhite px-3 py-1 rounded-full">React</span>
+            <span class="bg-abwhite px-3 py-1 rounded-full">MongoDB</span>
+            <span class="bg-abwhite px-3 py-1 rounded-full">Node.js</span>
+            <span class="bg-abwhite px-3 py-1 rounded-full">Express.js</span>
+            <span class="bg-abwhite px-3 py-1 rounded-full">NGINX</span>
+            <span class="bg-abwhite px-3 py-1 rounded-full">AWS</span>
+
+
+          </div>
+          <div class="flex gap-4">
+            <a
+              href="https://github.com/Kartavya052000/Truvoye-frontend"
+              target="_blank"
+              class="text-white bg-carnation px-4 py-2 rounded hover:bg-red-400"
+              >GitHub</a
+            >
+            <a
+              href="https://truvoye.vercel.app/"
+              target="_blank"
+              class="text-carnation underline hover:text-red-500"
+              >Live Demo</a
+            >
+          </div>
+        </div>
+      
+
+ <!-- Project Card 4 -->
+        <div
+          class="bg-spanishpink p-6 rounded-3xl shadow-lg hover:scale-[1.02] transition-transform"
+        >
+        <img src="images/Phonix-pic.png" alt="Phonix-image" class="w-full mb-4 sm:h-52 md:h-56 object-cover rounded-md hover:opacity-80">
+          <h3 class="text-2xl font-semibold mb-2">Phonix</h3>
+          <p class="text-gray-800 mb-3">
+            Phonix provides a tech-driven, interactive solution for improving
+speech through AI-powered real-time analysis and feedback.
+It offers personalized recommendations based on individual
+speech patterns and challenges to maintain user engagement.
+          </p>
+          <div class="flex flex-wrap gap-2 text-sm mb-4">
+            <span class="bg-abwhite px-3 py-1 rounded-full">React Native</span>
+            <span class="bg-abwhite px-3 py-1 rounded-full">Expo</span>
+            <span class="bg-abwhite px-3 py-1 rounded-full">MongoDB</span>
+            <span class="bg-abwhite px-3 py-1 rounded-full">Express.js</span>
+            <span class="bg-abwhite px-3 py-1 rounded-full">Node.js</span>
+            <span class="bg-abwhite px-3 py-1 rounded-full">Apache</span>
+            <span class="bg-abwhite px-3 py-1 rounded-full">OpenAI API</span>
+            <span class="bg-abwhite px-3 py-1 rounded-full">AWS</span>
+
+
+          </div>
+          <div class="flex gap-4">
+            <a
+              href="https://github.com/BhawleenKaurDeol/Phonix-Frontend-public"
+              target="_blank"
+              class="text-white bg-carnation px-4 py-2 rounded hover:bg-red-400"
+              >GitHub</a
+            >
+            <a
+              href="https://bhawleenkaurdeol.github.io/Phonix-Landing-Page/"
+              target="_blank"
+              class="text-carnation underline hover:text-red-500"
+              >Live Demo</a
+            >
+          </div>
+        </div>
+      </div>
+      </div>
+              
+
+             
+    </section>
+
+    <!-- Contact Me Form -->
+    <section
+      id="contact"
+      class="bg-abwhite py-12 px-8"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <h2 class="text-4xl font-bold text-center text-carnation">Contact Me</h2>
+
+      <form
+        action="https://formspree.io/f/mwpbadve"
+        method="POST"
+        class="max-w-2xl mx-auto bg-white p-6 rounded-3xl shadow-lg space-y-6 mt-4"
+      >
+        <div>
+          <label><i class="fa-solid fa-signature"></i> Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-carnation"
+          />
+          <p class="mt-1 text-sm text-red-600 hidden" id="nameError">
+            Please enter a valid name.
+          </p>
+        </div>
+
+        <div>
+          <label><i class="fa-solid fa-envelope"></i> Email</label>
+          <input
+            type="email"
+            id="email"
+            name="_replyto"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-carnation"
+          />
+          <p class="mt-1 text-sm text-red-600 hidden" id="emailError">
+            Please enter a valid email address.
+          </p>
+        </div>
+
+        <div>
+          <label><i class="fa-solid fa-message"></i> Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-carnation"
+          ></textarea>
+          <p class="mt-1 text-sm text-red-600 hidden" id="messageError">
+            Please enter a valid message.
+          </p>
+        </div>
+
+        <div class="text-center">
+          <button
+            type="submit"
+            class="bg-carnation text-white px-6 py-2 rounded-lg hover:bg-red-400 transition-all"
+          >
+            Send Message
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <footer class="text-center bg-carnation text-white py-6 px-6  mt-12">
+      <p>&copy; 2025 Bhawleen Kaur Deol. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>

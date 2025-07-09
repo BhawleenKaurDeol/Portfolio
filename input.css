@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+    --color-abwhite: #F7E9DE ;
+    --color-carnation: #F15F61 ;
+    --color-spanishpink: #F0BBB4 ;
+    --color-rubypetals: #A55I66 ;
+
+}
